@@ -29,9 +29,8 @@ pipeline {
                     sonar-scanner \
                     -Dsonar.projectKey=netflix-clone \
                     -Dsonar.sources=. \
-                    -Dsonar.host.url=http://localhost:9000 \
-                    -Dsonar.login=$SONAR_AUTH_TOKEN
-                    '''
+                    -Dsonar.host.url=http://192.168.122.82:9000 \
+                    
                 }
             }
         }
