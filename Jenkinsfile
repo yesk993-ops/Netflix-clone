@@ -18,7 +18,7 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/yesk993-ops/Netflix-clone.git'
+                git branch: 'main', url: 'https://github.com/yesk993-ops/Netflix-clone.git'
             }
         }
 
