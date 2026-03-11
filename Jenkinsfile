@@ -24,7 +24,7 @@ pipeline {
 
         stage('SonarQube Analysis') {
             steps {
-                withSonarQubeEnv("${SONAR_SERVER}") {
+                withSonarQubeEnv('sonar') {
                     sh '''
                     sonar-scanner \
                     -Dsonar.projectKey=netflix-clone \
